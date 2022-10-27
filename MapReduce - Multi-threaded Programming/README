@@ -1,0 +1,18 @@
+oz.matlaw, guylevy1
+oz matlaw 329603674, guy levy 208917609
+EX: 3
+
+FILES:
+MapReduceFramework.cpp -- map reduce framework
+Barrier.cpp -- barrier supplied by the course staff
+Barrier.h -- header file for the barrier class
+JobContext.cpp -- JobContext class 
+JobContext.h -- header file for the JobContext class 
+ThreadContext.cpp -- ThreadContext class
+ThreadContext.h -- header file for the ThreadContext class 
+
+REMARKS:
+none
+
+ANSWERS:
+none
