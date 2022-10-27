@@ -1,0 +1,44 @@
+oz.matlaw, guylevy1
+oz matlaw 329603674, guy levy 208917609
+EX: 5
+
+FILES:
+
+
+REMARKS:
+
+
+ANSWERS:
+
+Q1:
+One general use of Linux PID Namespaces is to provide processes with an independent set of process IDs (PIDs) from
+other namespaces.
+PID namespaces are nested, meaning when a new process is created it will have a PID for each namespace from its current
+namespace up to the initial PID namespace.
+
+Q2:
+Creating a separate mount namespace allows each of these isolated processes to have a completely different view of the
+entire system's mountpoint structure from the original one.
+This allows us to have a different root for each isolated process, as well as other mountpoints that are specific to
+those processes.
+
+Q3:
+cgroups allow processes to be organized into hierarchical groups whose usage of various types of resources can then be
+limited and monitored.
+
+Q4:
+The clone command is the syscall used by fork(). With some parameters, it creates a new process, with others, it
+creates a thread.
+The difference between them is which data structures (memory space, processor state, stack, PID, open files, etc)
+are shared.
+
+Q5:
+chroot command in Linux system is used to change the root directory. Every process or command in Linux like systems
+has a current working directory called root directory.
+It changes the root directory for currently running processes as well as its child processes.
+
+Q6:
+Proc file system (procfs) is virtual file system created when the system boots and is deleted when the system
+shuts down.
+It contains useful information about the processes that are currently running, it is regarded as control and
+information center for kernel
