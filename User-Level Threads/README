@@ -1,0 +1,55 @@
+oz.matlaw, guylevy1
+oz matlaw 329603674, guy levy 208917609
+EX: 2
+
+FILES:
+Thread.h
+Thread.cpp
+uthread.cpp
+
+
+REMARKS:
+These are some remarks that
+We want the graders to know
+about this submission.
+
+ANSWERS:
+
+Q1:
+One general use of user-level threads is when developing an application with a heavy workload of functions and
+calculations (such as UI).
+By using User-level threads we provide the user the ability to perform several actions simultaneously while a heavy
+calculation is being calculated in the background.
+Thus, one of the main advantages of user-level threads over kernel level threads, which can perform only a sole
+calculation at any given time.
+
+Q2:
+The advantages of opening a separate process for each tab is performance, synchronization is guaranteed
+and full isolation.
+The disadvantage of using a process as opposed to kernel-level threads is that context switch will be slower
+adding substantial overhead and each process has its own memory with their own instance of the browser engine therefore
+leading to very high memory consumption as opposed to kernel level threads.
+
+Q3:
+Process PID:
+Shotwell - PID <1>
+terminal (shell) - PID <2>
+The process that runs the terminal sends a signal to the process with PID <1>. The bit that matches the signal SIGTERM
+is the signal table of process <1> and when triggered equals 1. During the execution of process <1>, the process will
+encounter a system call or a clock interrupt and switch to the kernel space.
+on completion of the action prior to the return to user space the process will check the signal table.
+When SIGTERM is 1 in the signal table the process <1> will load the handler assigned to the given signal.
+Upon activation of the kill command from the keyboard, a hardware interrupt is initiated.
+
+Q4:
+Real time - current time (based on the region where the system is deployed),
+example: timer used for the alarm.
+Virtual time - the run time required by the CPU to complete a process not taking into account interruptions.
+Example: measure the time it takes to run a single operation and according to the result, evaluate the CPU speed,
+(how many operations per second).
+
+Q5:
+sigsetjmp - saves the calling environment (current location, CPU state and signal mask)
+in env for later to be used by siglongjmp.
+siglongjmp -  jumps to the saved location, restoring the state specified by the env if the signal mask was saved
+in sigsetjmp then it will be restored as well.
